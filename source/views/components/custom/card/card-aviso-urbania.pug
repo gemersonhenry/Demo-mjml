@@ -1,0 +1,46 @@
+mixin card-aviso-urbania(src, href, desc, ubic, soles, dolares, area, habit, banios)
+	mj-image(
+		width="600px",
+		src!=src, 
+		href!=href, 
+		padding=paddingNull
+	)
+	mj-text(
+		mj-class="font-md color-gray", 
+		padding="2px 10px", 
+		padding-top="10px"
+	) 
+		| #{desc}
+	mj-text(
+		mj-class="font-md color-gray", 
+		padding="0px 10px"
+	) 
+		| #{ubic}
+	mj-group(
+		width="600px", 
+		padding-bottom="8px"
+	)
+		mj-column(width="60%")
+			mj-text(
+				mj-class="color-orange-urb font-lg", 
+				padding="4px 10px 0px"
+			) 
+				| S/. #{soles}
+			mj-text(
+				mj-class="font-sm color-gray", 
+				padding="0px 10px 2px"
+			) 
+				| $ #{dolares}
+			mj-text(
+				mj-class="font-sm color-gray", 
+				padding="2px 10px"
+			) 
+				| #{area} m2, #{habit} dorm, #{banios} baño(s)
+		mj-column(width="40%")
+			mj-button(
+				padding=paddingNull, 
+				mj-class="bg-orange-urb font-md", 
+				border-radius="0px", 
+				inner-padding="8px 10px"
+			) 
+				| Ver Aviso

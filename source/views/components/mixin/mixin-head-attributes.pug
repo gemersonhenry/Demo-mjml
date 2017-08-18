@@ -1,0 +1,10 @@
+//- parametro a recibir: nombre del portal
+
+mixin head-attributes(nombreDelPortal)
+	include ../generic/head-attributes.pug
+	if nombreDelPortal == "urbania"
+		include ../custom/head/head-attributes-urbania.pug
+	if nombreDelPortal == "neoauto"
+		include ../custom/head/head-attributes-neoauto.pug
+	if nombreDelPortal == "aptitus"
+		include ../custom/head/head-attributes-aptitus.pug

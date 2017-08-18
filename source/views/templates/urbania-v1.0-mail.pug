@@ -1,0 +1,160 @@
+include ../components/mixin/mixin-head-attributes.pug
+include ../components/custom/card/card-aviso-urbania.pug
+- var paddingCustomXSM = "5px"
+- var paddingCustomSM = "10px"
+- var paddingCustomMD = "20px"
+- var paddingCustomLG = "40px"
+- var paddingNull = "0px"
+- var title = "Mira los inmuebles que hemos encontrado para ti"
+mjml
+	mj-head
+		mj-attributes
+			+head-attributes("urbania")
+		mj-style(inline="inline").
+			.padding-trl{
+				padding-top: 20px;
+				padding-right: 20px;
+				padding-left: 20px;
+			}
+			.padding-right{
+				padding-right: 20px;
+			}
+			.padding-left{
+				padding-left: 20px;
+			}
+			.box-sizing{
+				box-sizing: border-box;
+			}
+			.padding-sm{
+				padding: 5px;
+			}
+			.padding-md{
+				padding: 15px;
+			}
+			.padding-lg{
+				padding: 25px;
+			}
+	mj-body
+		mj-container(mj-class="bg-gray")
+			//- header
+			mj-section(padding-top=paddingNull, padding-bottom=paddingNull, mj-class="bg-white")
+				mj-column
+					mj-text(mj-class="align-l color-green-urb font-h1",
+						padding-left=paddingCustomSM)
+						| URBANIA
+				mj-column
+					mj-text(mj-class="align-r color-green-urb font-h1",
+						padding-right=paddingCustomSM)
+						| BZGemerson
+			mj-section(padding-top=paddingNull, padding-bottom=paddingNull)
+				mj-column(mj-class="bg-green-urb")
+					mj-text(mj-class="font-lg color-white align-c",
+						padding-top=paddingCustomLG, padding-bottom=paddingCustomLG)
+						| #{title}
+			//- content
+			mj-section(padding=paddingNull, mj-class="bg-white")
+				mj-column(mj-class="bg-gray", css-class="box-sizing padding-trl")
+					+card-aviso-urbania(
+						"http://cde.urbania.g3c.pe/1369/avisos/3484621/galery-view/1369_585367cfe9e49.jpeg", 
+						"#", 
+						"local comercial en alquiler temporal", 
+						"San Borja", 
+						"900 000", 
+						"300 000", 
+						"320", 
+						"2", 
+						"1")
+				mj-column(mj-class="bg-gray", css-class="box-sizing padding-trl")
+					+card-aviso-urbania(
+						"http://cde.urbania.g3c.pe/1369/avisos/3484621/galery-view/1369_585367cfe9e49.jpeg", 
+						"#", 
+						"local comercial en alquiler temporal", 
+						"San Borja", 
+						"900 000", 
+						"300 000", 
+						"320", 
+						"2", 
+						"1")
+			mj-section(padding=paddingNull, mj-class="bg-white")
+				mj-column(mj-class="bg-gray", css-class="box-sizing padding-trl")
+					+card-aviso-urbania(
+						"http://cde.urbania.g3c.pe/1369/avisos/3484621/galery-view/1369_585367cfe9e49.jpeg", 
+						"#", 
+						"local comercial en alquiler temporal", 
+						"San Borja", 
+						"900 000", 
+						"300 000", 
+						"320", 
+						"2", 
+						"1")
+				mj-column(mj-class="bg-gray", css-class="box-sizing padding-trl")
+					+card-aviso-urbania(
+						"http://cde.urbania.g3c.pe/1369/avisos/3484621/galery-view/1369_585367cfe9e49.jpeg", 
+						"#", 
+						"local comercial en alquiler temporal", 
+						"San Borja", 
+						"900 000", 
+						"300 000", 
+						"320", 
+						"2", 
+						"1")
+			mj-section(padding=paddingNull, mj-class="bg-white")
+				mj-column(mj-class="bg-gray", css-class="box-sizing padding-trl")
+					+card-aviso-urbania(
+						"http://cde.urbania.g3c.pe/1369/avisos/3484621/galery-view/1369_585367cfe9e49.jpeg", 
+						"#", 
+						"local comercial en alquiler temporal", 
+						"San Borja", 
+						"900 000", 
+						"300 000", 
+						"320", 
+						"2", 
+						"1")
+				mj-column(mj-class="bg-gray", css-class="box-sizing padding-trl")
+					+card-aviso-urbania(
+						"http://cde.urbania.g3c.pe/1369/avisos/3484621/galery-view/1369_585367cfe9e49.jpeg", 
+						"#", 
+						"local comercial en alquiler temporal", 
+						"San Borja", 
+						"900 000", 
+						"300 000", 
+						"320", 
+						"2", 
+						"1")
+			mj-section(
+				padding-top=paddingCustomMD, padding-left=paddingCustomMD, 
+				padding-right=paddingCustomMD, padding-bottom=paddingNull, mj-class="bg-white")
+				mj-column(css-class="padding-sm")
+					mj-button(
+						padding=paddingNull, 
+						mj-class="bg-orange-urb font-lg", 
+						border-radius="0px", 
+						inner-padding="10px 12px"
+					)
+						| Encuentra más inmuebles aquí
+			mj-section(
+				padding-top=paddingNull, padding-left=paddingCustomMD, 
+				padding-right=paddingCustomMD, padding-bottom=paddingNull, mj-class="bg-white")
+				mj-group(width="100%")
+					mj-column
+						mj-image(
+							padding=paddingCustomSM,
+							src="http://i.imgur.com/M4UWHci.jpg", 
+							href="https://www.facebook.com/urbaniaperu/")
+					mj-column
+						mj-image(
+							padding=paddingCustomSM,
+							src="http://i.imgur.com/3II7rMj.jpg",
+							href="https://twitter.com/urbaniape")
+					mj-column
+						mj-image(
+							padding=paddingCustomSM,
+							src="http://i.imgur.com/zipVViw.jpg",
+							href="https://plus.google.com/+UrbaniaPe1")
+
+
+
+
+
+
+
